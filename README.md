@@ -32,7 +32,6 @@ Each entry in GeoGPT-CoT-QA Dataset includes the following information:
 
 - `license`: usage license of the source publication (all is under CC BY)
 
-
 ### 2. How to download
 
 The dataset is hosted on the [Hugging Face Hub](https://huggingface.co/datasets/GeoGPT-Research-Project/GeoGPT-CoT-QA) as an CSV file (.csv).
@@ -45,7 +44,6 @@ wget https://huggingface.co/datasets/GeoGPT-Research-Project/GeoGPT-CoT-QA/blob/
 curl -L -o geogpt-cot-qa.csv https://huggingface.co/datasets/GeoGPT-Research-Project/GeoGPT-CoT-QA/blob/main/geogpt-cot-qa.csv
 ```
 
-
 #### Using 🤗`datasets` library
 
 ```python
@@ -54,7 +52,13 @@ from datasets import load_dataset
 data = load_dataset("GeoGPT-Research-Project/geogpt-cot-qa")
 ```
 
-### 3. License and Intended Uses
+### 3. Dataset Construction
+
+GeoGPT-CoT-QA Dataset was constructed using the [zjsyn_qa_generator](https://github.com/GeoGPT-Research-Project/Foundation2Domain-LLM-Training/tree/main/src/data_tools/zjsyn_qa_generator) module from the [Foundation2Domain-LLM-Training](https://github.com/GeoGPT-Research-Project/Foundation2Domain-LLM-Training) project.
+
+Generation code: https://github.com/GeoGPT-Research-Project/Foundation2Domain-LLM-Training
+
+### 4. License and Intended Uses
 
 **License**：The dataset is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
@@ -72,5 +76,5 @@ data = load_dataset("GeoGPT-Research-Project/geogpt-cot-qa")
 
 It must be used with proper attribution and in accordance with the terms of the CC BY 4.0 license.
 
-## 4. Contact
+### 5. Contact
 For questions, feedback, or contributions, please open an issue in this repository or contact us at 📧 [support.geogpt@zhejianglab.org](support.geogpt@zhejianglab.org).
